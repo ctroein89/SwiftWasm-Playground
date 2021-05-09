@@ -20,3 +20,6 @@ mkdir TokamakApp && cd TokamakApp
 carton init --template tokamak
 carton dev
 ```
+
+## Limitations
+* Swift Foundation doesn't have the Dispatch library because WASM doesn't support threading, which is because Safari, Warmer, and Node.js don't support threading. It looks like Safari is working on it, meaning that support might be added soon.
